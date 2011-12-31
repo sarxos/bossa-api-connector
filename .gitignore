@@ -1,3 +1,5 @@
 target
 .settings
+data/storage
+data/credentials.ini
 

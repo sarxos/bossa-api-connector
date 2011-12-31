@@ -25,8 +25,10 @@ public class BOSConnector {
 	
 	public BOSConnector() throws BOSConnectorException {
 		this.syncPort = Integer.parseInt(getSyncPortSettings());
+		System.out.println(syncPort);
 		this.asyncPort = Integer.parseInt(getAsyncPortSettings());
 		this.syncSocket = null;
+		System.out.println(asyncPort);
 	}
 	
 	private String getSyncPortSettings() throws BOSConnectorException {
@@ -39,7 +41,7 @@ public class BOSConnector {
 			throw new RuntimeException(e);
 		}
 		if (value == null) {
-			throw new BOSConnectorException("Value " + name + " in " + NOL3_REG_KEY + " does not exist");
+			throw new BOSConnectorException("Value " + name + " in " + HKey.HKCU + "\\" + NOL3_REG_KEY + " does not exist");
 		}
 		return value;
 	}
@@ -54,7 +56,7 @@ public class BOSConnector {
 			throw new RuntimeException(e);
 		}
 		if (value == null) {
-			throw new BOSConnectorException("Value " + name + " in " + NOL3_REG_KEY + " does not exist");
+			throw new BOSConnectorException("Value " + name + " in " + HKey.HKCU + "\\" + NOL3_REG_KEY + " does not exist");
 		}
 		return value;
 	}
