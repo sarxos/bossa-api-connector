@@ -32,10 +32,10 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>2.3.2</version>
+				<version>3.1</version>
 				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
 		</plugins>
@@ -55,19 +55,9 @@
 			<version>0.1</version>
 		</dependency>
 		<dependency>
-			<groupId>org.quickfixj</groupId>
-			<artifactId>quickfixj-core</artifactId>
-			<version>SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>org.quickfixj</groupId>
-			<artifactId>quickfixj-msg-fix50</artifactId>
-			<version>SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>org.quickfixj</groupId>
-			<artifactId>quickfixj-msg-fixt11</artifactId>
-			<version>SNAPSHOT</version>
+			<groupId>org.apache.servicemix.bundles</groupId>
+			<artifactId>org.apache.servicemix.bundles.quickfix</artifactId>
+			<version>1.5.3_1</version>
 		</dependency>
 	</dependencies>
 
